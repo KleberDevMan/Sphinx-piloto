@@ -32,8 +32,12 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
 gem 'materialize-sass'
 gem 'material_icons'
+
+
+gem 'wdm', '~> 0.1.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
