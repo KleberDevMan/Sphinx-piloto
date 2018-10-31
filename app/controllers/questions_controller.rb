@@ -61,14 +61,12 @@ class QuestionsController < ApplicationController
     end
   end
 
-  def cpf  
-    if params[:cpf] === "02052284370"
-      redirect_to new
-
-    end
-   
-  end
-
+def cpf
+ if params[:cpf] === "02052284370"
+  redirect_to new
+ end
+  
+end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_question
@@ -77,6 +75,6 @@ class QuestionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_params
-      params.require(:question).permit(:description)
+      params.require(:question).permit(:cpf, :q1, :q2, :q3)
     end
 end

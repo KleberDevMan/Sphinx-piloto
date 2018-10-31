@@ -10,16 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20181031120123) do
-
+ActiveRecord::Schema.define(version: 20181031153609) do
 
   create_table "answers", force: :cascade do |t|
     t.string   "desc_answer"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
-
 
   create_table "invoices", force: :cascade do |t|
     t.string   "cnpj"
@@ -34,18 +31,15 @@ ActiveRecord::Schema.define(version: 20181031120123) do
     t.string   "name_addressee"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
-
   end
 
   create_table "questions", force: :cascade do |t|
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
     t.bigint   "cpf"
     t.boolean  "q1"
     t.boolean  "q2"
     t.boolean  "q3"
-
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
