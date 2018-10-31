@@ -10,22 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20181030123629) do
+ActiveRecord::Schema.define(version: 20181031130006) do
 
   create_table "answers", force: :cascade do |t|
     t.string   "desc_answer"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
-
-  create_table "questions", force: :cascade do |t|
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.bigint   "cpf"
-
-ActiveRecord::Schema.define(version: 20181029164839) do
 
   create_table "notafiscals", force: :cascade do |t|
     t.string   "cnpj"
@@ -41,7 +32,16 @@ ActiveRecord::Schema.define(version: 20181029164839) do
     t.string   "dnome"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
 
+  create_table "questions", force: :cascade do |t|
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.bigint   "cpf"
+    t.boolean  "q1"
+    t.boolean  "q2"
+    t.boolean  "q3"
   end
 
 end
