@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cnpj:</strong>
+  <%= @invoice.cnpj %>
+</p>
+
+<p>
+  <strong>Social name:</strong>
+  <%= @invoice.social_name %>
+</p>
+
+<p>
+  <strong>Fantasy name:</strong>
+  <%= @invoice.fantasy_name %>
+</p>
+
+<p>
+  <strong>Public place:</strong>
+  <%= @invoice.public_place %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @invoice.district %>
+</p>
+
+<p>
+  <strong>County:</strong>
+  <%= @invoice.county %>
+</p>
+
+<p>
+  <strong>Uf:</strong>
+  <%= @invoice.uf %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @invoice.country %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @invoice.cpf %>
+</p>
+
+<p>
+  <strong>Name addressee:</strong>
+  <%= @invoice.name_addressee %>
+</p>
+
+<%= link_to 'Edit', edit_invoice_path(@invoice) %> |
+<%= link_to 'Back', invoices_path %>

@@ -1,2 +1,0 @@
-class Notafiscal < ApplicationRecord
-end
