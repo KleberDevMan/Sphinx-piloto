@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181031130006) do
+
+ActiveRecord::Schema.define(version: 20181031120123) do
+
 
   create_table "answers", force: :cascade do |t|
     t.string   "desc_answer"
@@ -18,20 +20,21 @@ ActiveRecord::Schema.define(version: 20181031130006) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "notafiscals", force: :cascade do |t|
+
+  create_table "invoices", force: :cascade do |t|
     t.string   "cnpj"
-    t.string   "enome"
-    t.string   "fant"
-    t.string   "lgr"
-    t.string   "bairro"
-    t.string   "mun"
+    t.string   "social_name"
+    t.string   "fantasy_name"
+    t.string   "public_place"
+    t.string   "district"
+    t.string   "county"
     t.string   "uf"
-    t.string   "pais"
-    t.string   "fone"
+    t.string   "country"
     t.string   "cpf"
-    t.string   "dnome"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name_addressee"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+
   end
 
   create_table "questions", force: :cascade do |t|
@@ -42,6 +45,7 @@ ActiveRecord::Schema.define(version: 20181031130006) do
     t.boolean  "q1"
     t.boolean  "q2"
     t.boolean  "q3"
+
   end
 
 end

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cnpj: MyString
+  social_name: MyString
+  fantasy_name: MyString
+  public_place: MyString
+  district: MyString
+  county: MyString
+  uf: MyString
+  country: MyString
+  cpf: MyString
+  name_addressee: MyString
+
+two:
+  cnpj: MyString
+  social_name: MyString
+  fantasy_name: MyString
+  public_place: MyString
+  district: MyString
+  county: MyString
+  uf: MyString
+  country: MyString
+  cpf: MyString
+  name_addressee: MyString
