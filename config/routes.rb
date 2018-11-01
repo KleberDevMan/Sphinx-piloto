@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :questions
   resources :invoices
   resources :answers
   resources :questions do
