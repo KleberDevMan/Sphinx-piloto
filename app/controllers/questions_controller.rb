@@ -75,6 +75,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_params
-      params.require(:question).permit(:cpf, :q1, :q2, :q3)
+      params.require(:question).permit(:cpf, :q1, :q2, :q3, answers_attributes: Answer.attribute_names.map(&:to_sym))
     end
 end
