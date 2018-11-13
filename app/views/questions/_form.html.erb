@@ -42,7 +42,7 @@
       </div>
      
     </div>
- <div class="btn deep-purple darken-3 waves-effect back2 right"> Voltar </div>
+
     <div class="field q33 card-content">
 
       <%= f.label :q3, "qual foi o estabelecimento ultimo bla bla outra ?" , class: "flow-text" %> <br>
@@ -55,19 +55,25 @@
 
       
     </div>
-
+ <div class="btn deep-purple darken-3 waves-effect back2 right"> Voltar </div>
  <div class="btn deep-purple darken-3 waves-effect back3 right"> Voltar </div>
 
 
 <% end %>
-<div class="actions">
-  <%= f.submit "Enviar Respostas" , class: "btn waves-effect waves-light blue sub card-content ", style: "width: 48%; height: 100px; vertical-align: center;"%>
+<div class= "row box">
+<div class="">
+  <%= f.submit "Enviar Respostas" , class: "btn waves-effect waves-light blue sub actb col s5" %>
+ </div>
+ 
+  <div class="btn deep-purple darken-3 waves-effect rr right col s5 actb "> REFAZER RESPOSTAS
 </div>
-<div class="btn deep-purple darken-3 waves-effect rr right"> REFAZER RESPOSTAS
+
 </div>
 <% end %>
 
 <script type="text/javascript">
+
+
   $(document).ready(function() {
     $('.q22').hide();
     $('.q33').hide();
@@ -75,6 +81,7 @@
     $('.rr').hide();
     $('.back2').hide();
     $('.back3').hide();
+
     $(".q1").click(function () {
       $('.q11').hide(500);
       $('.q22').show(500);
@@ -102,13 +109,18 @@
       $('.q22').hide(500);
       $('.q11').show(500);
       $('.bar').animate({width: "1%"});
+      $('.back2').hide();
       
     });
     $(".back3").click(function () {
       $('.q33').hide(500);
-      $('.q22').show(500);
+      $('.q22').show(500);      
+      $('.back3').hide();
+      $('.back2').show();
+      $('.bar').animate({width: "33%"});
       
     });
+
     $(".rr").click(function () {
       $('.rr').hide();
       $('.sub').hide();
@@ -118,4 +130,5 @@
     });
 
   });
+
 </script>

@@ -10,12 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181106144550) do
+ActiveRecord::Schema.define(version: 20181110120051) do
 
   create_table "answers", force: :cascade do |t|
     t.string   "desc_answer"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.boolean  "a_true"
+    t.boolean  "a_false1"
+    t.boolean  "a_false2"
   end
 
   create_table "invoices", force: :cascade do |t|
