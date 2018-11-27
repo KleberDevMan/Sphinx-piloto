@@ -1,18 +1,14 @@
 default: &default
   adapter: oracle_enhanced
-  username: usr_gabrielsantos
-  password: e-gov@sefaz
+  username: siatdesv
+  password: desenvolvimento
+  database: 10.9.7.54:1521/dbdt
 
 development:
   <<: *default
-  database: srvdt.b:1521/dbdt
 
 test:
   <<: *default
-  database: srvdt.b:1521/dbdt
 
 production:
   <<: *default
-  database: app-oracle1_production
-  username: app-oracle1
-  password: <%= ENV['APP-ORACLE1_DATABASE_PASSWORD'] %>

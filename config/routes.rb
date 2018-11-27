@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  resources :businesses
   resources :questions
-  resources :invoices
   resources :answers
   resources :questions do
   	collection do
