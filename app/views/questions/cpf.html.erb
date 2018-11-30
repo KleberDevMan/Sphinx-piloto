@@ -13,14 +13,19 @@
           <label for="icon_prefix">CPF</label>
         </div>
         <button> entrar </button>
-
-        <div>
-          <p>Nome fantasia: <%= @business.conrazsoc %></p>
-          <p>cnpj: <%= @business.coninscnpj %></p>
-        </div>
-
       </div>
     </form>
+
+    <div>
+          <p>Nome fantasia: <%= @business %><br/>
+          cnpj: <%= @business.coninscnpj %></p>
+        </div>
+        <div>
+          <p>Cpf vindo do banco: <%= @addressee %><br/>
+          cnpj relacionado com a tabela tb_dest: <%= @addressee %><br/>
+          id do endereço: <%= @addressee %>
+          </p>
+        </div>
   </div>
   </div>
   </div> 

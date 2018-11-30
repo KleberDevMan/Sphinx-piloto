@@ -1,8 +1,9 @@
 default: &default
   adapter: oracle_enhanced
+  database: 10.9.7.54:1521/dbdt
+  
   username: siatdesv
   password: desenvolvimento
-  database: 10.9.7.54:1521/dbdt
 
 development:
   <<: *default
