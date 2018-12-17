@@ -1,7 +1,8 @@
+ #CONEXAO ORACLE
 default: &default
   adapter: oracle_enhanced
   database: 10.9.7.54:1521/dbdt
-  
+
   username: siatdesv
   password: desenvolvimento
 
@@ -13,3 +14,22 @@ test:
 
 production:
   <<: *default
+
+ #CONEXAO POSTGRES
+#default: &default
+#  adapter: postgresql
+#  encoding: unicode
+#  username: postgres
+#  password: 123
+#  database: sphinx-piloto-postgres
+#
+#  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#
+#development:
+#  <<: *default
+#
+#test:
+#  <<: *default
+#
+#production:
+#  <<: *default

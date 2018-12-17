@@ -60,8 +60,10 @@ class QuestionsController < ApplicationController
   end
 
   def cpf
-    @addressee = Addressee.where(cpf: '03762657106')
-    @business = Emitter.last
+    # ORACLE
+    # @addressee = Addressee.where(cpf: '03762657106')
+    # @business = Emitter.last
+
     if params[:cpf] === '02052284370'
       redirect_to new
     end

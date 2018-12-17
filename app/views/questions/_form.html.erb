@@ -1,8 +1,9 @@
 <%= form_for(question) do |f| %>
+
+  <!-- ???-->
   <% if question.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(question.errors.count, "error") %> prohibited this question from being saved:</h2>
-
       <ul>
         <% question.errors.full_messages.each do |message| %>
           <li><%= message %></li>
@@ -10,6 +11,8 @@
       </ul>
     </div>
   <% end %>
+
+  <!--  if new record -->
   <% if @question.new_record? %>
     <div class="field cpf">
       <%= f.label :cpf %>
@@ -18,6 +21,8 @@
   <% else %>
     <h2> Olá C Junior </h2>
   <% end %>
+
+  <!--  if edit -->
   <% unless @question.new_record? %>
     <div class="deep-purple bar "></div>
 
@@ -69,6 +74,7 @@
 
     </div>
   <% end %>
+
   <div class="row box">
     <div class="">
       <%= f.submit "Enviar Respostas", class: "btn waves-effect waves-light blue sub actb col s5" %>
@@ -80,7 +86,6 @@
 <% end %>
 
 <script type="text/javascript">
-
 
     $(document).ready(function () {
         $('.q22').hide();
@@ -138,5 +143,4 @@
         });
 
     });
-
 </script>
